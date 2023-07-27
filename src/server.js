@@ -25,7 +25,9 @@ app.get('/', function(req,res) {
   res.render('index.html')
 })
 
-
+app.get('/portfolio-details', function(req,res) {
+  res.render('portfolio-details.html')
+})
 
 app.post('/', function(req,res) {
   const name = req.body.name
