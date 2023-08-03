@@ -232,6 +232,10 @@ a:hover {
   padding: 1.5rem 0;
 }
 
+.socials img {
+  margin-top: 4px;
+}
+
 .socials ul li {
   display: inline-block;
 }

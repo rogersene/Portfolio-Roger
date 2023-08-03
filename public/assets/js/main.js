@@ -230,12 +230,18 @@
 
 
 function addClassLoadSendForm() {
-  document.querySelector('.loading').classList.add('d-block')
+  const isFormValid = document.getElementById('form-contact-one').checkValidity();
+  
+  if (isFormValid) {
+    document.querySelector('.loading').classList.add('d-block')
+    setTimeout(function() {
+      document.querySelector('.loading').classList.remove('d-block');
+      document.querySelector('.sent-message').classList.add('d-block')
+    },2000);
+  } else {
+    document.querySelector('.loading').classList.remove('d-block')
+  }
 
-  setTimeout(function() {
-    document.querySelector('.loading').classList.remove('d-block');
-    document.querySelector('.sent-message').classList.add('d-block')
-  },2000);
 }
 
 

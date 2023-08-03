@@ -46,7 +46,7 @@
           <li><a class="nav-link scrollto active" href="/">Home</a></li>
           <li><a class="nav-link scrollto" href="/#about">Sobre</a></li>
           <li><a class="nav-link scrollto" href="/#services">Serviços</a></li>
-          <li><a class="nav-link scrollto " href="#work">Portfólio</a></li>
+          <li><a class="nav-link scrollto " href="/#work">Portfólio</a></li>
           <li><a class="nav-link scrollto" href="/#contact">Contato</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -60,12 +60,12 @@
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h2 class="hero-title mb-4">Detalhes Portfólio</h2>
+          <h2 class="hero-title mb-4">Detalhes Projeto</h2>
           <ol class="breadcrumb d-flex justify-content-center">
             <li class="breadcrumb-item">
               <a href="#">Home</a>
             </li>
-            <li class="breadcrumb-item active">Detalhes Portfólio</li>
+            <li class="breadcrumb-item active">Detalhes Projeto</li>
           </ol>
         </div>
       </div>
@@ -124,13 +124,133 @@
             [
               {
                 id: "1",
-                name: "attolini-desktop.jpeg",
+                name: "attolini-desktop.png",
               },
               {
                 id: "2",
-                name: "attolini-mobile.jpeg",
+                name: "attolini-desktop-2.png",
               },
+              {
+                id: "3",
+                name: "attolini-desktop-3.png",
+              }
             ],
+        }
+      },
+      {
+        id: 2,
+        customer: "M2 Empreendimentos",
+        description:
+          "Este espaço digital moderno e intuitivo foi criado para empresa M2 Empreendimentos e foi projetado para fornecer informações claras sobre os serviços oferecidos, destacando a expertise da empresa e facilitando o contato com potenciais clientes.",
+        url: "https://m2empreendimentos.net/",
+        images: {
+          projectCover: "m2-empreendimentos-desktop-1.png",
+          carrousel:
+            [
+              {
+                id: "1",
+                name: "m2-empreendimentos-desktop-1.png",
+              },
+              {
+                id: "2",
+                name: "m2-empreendimentos-desktop-2.png",
+              },
+              {
+                id: "3",
+                name: "m2-empreendimentos-desktop-3.png",
+              },
+              {
+                id: "4",
+                name: "m2-empreendimentos-desktop-4.png",
+              },
+              {
+                id: "5",
+                name: "m2-empreendimentos-desktop-5.png",
+              }
+            ]
+        }
+      },
+      {
+        id: 3,
+        customer: "EVOLVE - Marketing Assessoria",
+        description:
+          "O projeto de página de captura de leads para empresa Evolve Marketing Assessoria  foi desenvolvido para aumentar o número de leads qualificados e engajados para a empresa, a fim de ampliar o alcance e melhorar o crescimento dos negócios dos clientes. A estratégia se concentrou em atrair um público-alvo relevante.",
+        url: "https://evolvemarketing.com.br",
+        images: {
+          projectCover: "evolve-marketing-desktop-1.png",
+          carrousel:
+            [
+              {
+                id: "1",
+                name: "evolve-marketing-desktop-1.png",
+              },
+              {
+                id: "2",
+                name: "evolve-marketing-desktop-2.png",
+              },
+              {
+                id: "3",
+                name: "evolve-marketing-desktop-3.png",
+              },
+              {
+                id: "4",
+                name: "evolve-marketing-desktop-4.png",
+              }
+            ]
+        }
+      },
+      {
+        id: 4,
+        customer: "MAYA A ASSISTÊNTE VIRTUAL 24 HORAS",
+        description:
+          "Página de captura de leads desenvolvido para aumentar o número de leads qualificados e engajados que tem interesse em contratar um plano de saúde.",
+        url: "https://mayarj.com",
+        images: {
+          projectCover: "maya-rj-desktop-1.png",
+          carrousel:
+            [
+              {
+                id: "1",
+                name: "maya-rj-desktop-1.png",
+              },
+              {
+                id: "2",
+                name: "maya-rj-desktop-2.png",
+              },
+              {
+                id: "3",
+                name: "maya-rj-desktop-3.png",
+              }
+            ]
+        }
+      },
+      {
+        id: 5,
+        customer: "Usina Textil",
+        description:
+          "Este espaço digital moderno e intuitivo foi criado para empresa Usina Textil e foi projetado para fornecer informações sobre os lançamentos das coleções e transmitir de forma clara sobre os serviços oferecidos, destacando a expertise da empresa e facilitando o contato com potenciais clientes.",
+        url: "https://usinatextil.com.br",
+        images: {
+          projectCover: "usina-textil-desktop-1.png",
+          carrousel:
+            [
+              {
+                id: "1",
+                name: "usina-textil-desktop-1.png",
+              },
+              {
+                id: "2",
+                name: "usina-textil-desktop-2.png",
+              },
+              {
+                id: "3",
+                name: "usina-textil-desktop-3.png",
+              },
+              {
+                id: "3",
+                name: "usina-textil-desktop-4.png",
+              }
+            ]
         }
       },
     ];
@@ -142,11 +262,7 @@
       const containerPortfolioDetails = document.getElementById("container-portfolio-details");
 
       portfolio.filter(project => {
-        console.log(idProject)
-        console.log(String(project.id))
-        console.log('AAAAAAAAAAA', String(project.id) === idProject)
         if (String(project.id) === idProject) {
-          console.log('ENTROUUU IF')
           containerPortfolioDetails.innerHTML = `
             <div class="col-lg-8">
                   <div class="portfolio-details-slider swiper-container">
