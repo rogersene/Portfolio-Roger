@@ -230,7 +230,8 @@
 
 
 function addClassLoadSendForm() {
-  const isFormValid = document.getElementById('form-contact-one').checkValidity();
+
+  const isFormValid = document.getElementById('form-contact').checkValidity();
   
   if (isFormValid) {
     document.querySelector('.loading').classList.add('d-block')
