@@ -15,6 +15,57 @@
   <link href="../../assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/8fa2413384.js" crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17489474043">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17489474043');
+  </script>
+
+  <!-- Event snippet for Visualização de página conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-17489474043/HpErCOCd4ogbEPvj0JNB',
+        'value': 1.0,
+        'currency': 'BRL',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
+
+
+  <!-- Event snippet for Visualização de página conversion page
+  In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-17489474043/HpErCOCd4ogbEPvj0JNB',
+        'value': 1.0,
+        'currency': 'BRL',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
+
 </head>
 
 <body>
@@ -51,6 +102,7 @@
           <a 
             href="https://api.whatsapp.com/send?1=pt_BR&phone=5535998696136&text=Ol%C3%A1%20Roger!%20Quero%20saber%20como%20posso%20impulsionar%20meu%20neg%C3%B3cio%20com%20solu%C3%A7%C3%B5es%20digitais%20personalizadas."
             class="btn btn-primary btn-lg cta-primary" 
+            onclick="return gtag_report_conversion('https://api.whatsapp.com/send?1=pt_BR&phone=5535998696136&text=Ol%C3%A1%20Roger!%20Quero%20saber%20como%20posso%20impulsionar%20meu%20neg%C3%B3cio%20com%20solu%C3%A7%C3%B5es%20digitais%20personalizadas.')"
             aria-label="Quero vender todos os dias"
           >
             Quero vender todos os dias
@@ -91,6 +143,7 @@
                 <a 
                   href="https://api.whatsapp.com/send?1=pt_BR&phone=5535998696136&text=Ol%C3%A1%20Roger!%20Quero%20saber%20como%20posso%20impulsionar%20meu%20neg%C3%B3cio%20com%20solu%C3%A7%C3%B5es%20digitais%20personalizadas." 
                   class="btn btn-primary mt-3" 
+                  onclick="return gtag_report_conversion('https://api.whatsapp.com/send?1=pt_BR&phone=5535998696136&text=Ol%C3%A1%20Roger!%20Quero%20saber%20como%20posso%20impulsionar%20meu%20neg%C3%B3cio%20com%20solu%C3%A7%C3%B5es%20digitais%20personalizadas.')"
                   style="background: #25d366; border: none;"
                 >
                   Quero impulsionar meu negócio
@@ -415,6 +468,7 @@
 
   <a name="buttonPurchased"
     href="https://api.whatsapp.com/send?1=pt_BR&phone=5535998696136&text=Ol%C3%A1%20Roger!%20Quero%20saber%20como%20posso%20impulsionar%20meu%20neg%C3%B3cio%20com%20solu%C3%A7%C3%B5es%20digitais%20personalizadas."
+    onclick="return gtag_report_conversion('https://api.whatsapp.com/send?1=pt_BR&phone=5535998696136&text=Ol%C3%A1%20Roger!%20Quero%20saber%20como%20posso%20impulsionar%20meu%20neg%C3%B3cio%20com%20solu%C3%A7%C3%B5es%20digitais%20personalizadas.')"
     class="button-flutuante-whats" target="_blank">
     <i class="fa fa-whatsapp"></i>
   </a>
